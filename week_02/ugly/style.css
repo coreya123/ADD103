@@ -1,0 +1,22 @@
+
+body {
+    background-color: #dcfc38;
+    background-image: url(mango_tree.png);
+    background-size: 2%; /* makes image really small so it tiles a lot and looks bad */
+    font-family: fantasy;
+}
+
+h1 {
+    color: #7d1902;
+}
+
+h2 {
+    color: rgb(0,252,219);
+}
+
+blockquote {
+    background-color: rgba(255, 0, 119, 0.316);
+    border: 10px solid salmon; /* really thick ugly border */
+    padding: 10px;
+    margin: 36px;
+}
