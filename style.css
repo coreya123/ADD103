@@ -1,0 +1,24 @@
+body {
+    background-color:rgb(241, 232, 134);
+}
+
+h1, h2, h3 {
+    color:darkslateblue;
+}
+
+p, li, a {
+    color:darkslategray;
+}
+
+a:hover {
+    color: rgb(90, 121, 121);
+}
+
+summary {
+    color: darkslateblue;
+    font-size: larger;
+}
+
+#profile-pic {
+    max-width: 100px;
+}

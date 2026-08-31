@@ -1,5 +1,5 @@
 body {
-    color:mistyrose;
+    background-color:mistyrose;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -16,4 +16,16 @@ p {
     border: 10px solid deeppink;
     border-radius: 5px;
     margin: 30px;
+}
+
+a {
+    color:mistyrose;
+    background-color: deeppink;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+a:hover {
+    color:white;
+    background-color: rgb(255, 99, 182);
 }
