@@ -1,0 +1,19 @@
+body {
+    color:mistyrose;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
+    color:deeppink;
+}
+
+p {
+    color: black;
+}
+
+.gallery-pic {
+    max-width: 300px;
+    border: 10px solid deeppink;
+    border-radius: 5px;
+    margin: 30px;
+}
