@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    width: fill 100%;
+    
+}
+
+th, td {
+    border: 1px solid #dddddd;
+}
+
+img {
+    max-width: 30px;
+        height: auto;
+}
+
+
+#birthday {
+    background-color: coral;
+}
