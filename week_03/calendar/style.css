@@ -35,8 +35,10 @@ td {
     vertical-align: top;
 }
 
-
-
+caption {
+    font-size: larger;
+    font-weight: bold;
+}
 
 img {
     max-width: 70px;
