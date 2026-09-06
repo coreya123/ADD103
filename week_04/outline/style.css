@@ -1,15 +1,19 @@
 
 
 body {
-    background-color:cornsilk;
+    background-color:lavenderblush;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 2;
+}
+
+h1 {
+    color: rgb(98, 0, 98);
 }
 
 ul li{
     font-size: larger;
     font-weight: bold;
-
+    color:rgb(119, 0, 119);
    
    
 
@@ -20,7 +24,7 @@ ul ol li {
     font-weight: 100;
 
     list-style-type: lower-roman;
-    
+    color:rgb(114, 1, 114);
     
 }
 
@@ -29,6 +33,7 @@ ul ol ul li {
     font-weight: 100;
 
     list-style-type: circle;
+    color:darkmagenta;
 
     
     
