@@ -1,6 +1,123 @@
 :root {
-    --primary-color: #489FB5;
-    --background-color: #EDE7E3;
-    --dark-text-color: #2F2F2F;
-    --light-text-color: #FFFFFF;
+  --primary-color: #489fb5;
+  --background-color: #ede7e3;
+  --secondary-background-color: #16697a;
+  --accent-color-one: #82c0cc;
+  --accent-color-two: #ffa62b;
+  --dark-text-color: #2f2f2f;
+  --light-text-color: #ffffff;
+  --body-text-color: #000000;
+  --text-shadow-color: #000000;
+  --corner-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent-color-two);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+
+  padding: 20px 30px;
+}
+
+main {
+  padding: 20px 30px;
+  overflow: hidden;
+  color: var(--dark-text-color);
+}
+
+aside {
+  float: right;
+  width: 20%;
+  background-color: var(--secondary-background-color);
+  color: var(--light-text-color);
+  padding: 15px 20px;
+  margin: 40px 20px 40px 10px;
+  border-radius: var(--corner-radius);
+}
+
+aside img {
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: var(--corner-radius);
+}
+
+footer {
+  background-color: var(--dark-text-color);
+  color: var(--light-text-color);
+
+  text-align: center;
+
+  padding: 20px 10px;
+}
+
+footer a {
+  color: var(--primary-color);
+}
+
+footer a:hover {
+  color: var(--accent-color-one);
+}
+
+.column-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  border-radius: var(--corner-radius);
+  border: 1px dotted var(--dark-text-color);
+  text-align: center;
+
+  background-color: var(--primary-color);
+
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.column-card h2 {
+  color: var(--accent-color-two);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.column-card p {
+  margin: 20px 10px;
+}
+
+.column-card img {
+  width: 60%;
+  height: auto;
+
+  padding: 20px;
+  background-color: var(--accent-color-one);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--light-text-color);
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 130px;
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  text-align: center;
+  border-radius: var(--corner-radius);
+  padding: 5px;
+  position: absolute;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
