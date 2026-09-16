@@ -1,10 +1,33 @@
+:root {
+  --light-color: #fff8f0;
+  --dark-color: #1e1e24;
+  --primary-color: #111d4a;
+  --secondary-color: #888da7;
+  --accent-color: #9c7a97;
+}
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--dark-color);
+  text-align: center;
+  padding: 20px 0px;
+}
+
+footer a {
+  color: var(--light-color);
 }
 
 .hero {
   display: flex;
   align-items: center;
+  background-color: var(--primary-color);
 }
 
 .hero-text {
@@ -12,7 +35,25 @@
   padding: 20px;
 }
 
+.hero-text h1 {
+  color: var(--light-color);
+  font-size: 72px;
+  margin: 10px 0px;
+}
+
+.hero-text p {
+  color: var(--light-color);
+  font-size: x-large;
+  margin-left: 20px;
+}
+
 .hero-text button {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  margin-left: 20px;
+  padding: 15px 40px;
+  font-size: larger;
+  border-radius: 10px;
 }
 
 .hero-image {
