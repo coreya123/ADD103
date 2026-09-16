@@ -18,6 +18,11 @@ header {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+  color: var(--dark-color);
+}
+
 footer {
   text-align: center;
   background-color: var(--dark-color);
