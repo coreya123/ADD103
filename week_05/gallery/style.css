@@ -1,14 +1,52 @@
+:root {
+  --light-color: #f4f3ee;
+  --medium-color: #bcb8b1;
+  --dark-color: #463f3a;
+  --primary-color: #e0afa0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-color);
+}
+
+header {
+  color: var(--dark-color);
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--dark-color);
+  padding: 20px;
+}
+
+footer a {
+  color: var(--light-color);
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
 .gallery-row {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
+  background-color: var(--medium-color);
 }
 
 .card {
   width: 30%;
   padding: 20px 10px;
   margin: 10px;
-  border: 2px solid #000;
+  border: 2px solid var(--dark-color);
+  background-color: var(--primary-color);
+  color: var(--dark-color);
 
   min-width: 300px;
 }
