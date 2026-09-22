@@ -5,6 +5,10 @@
   --accent-color: #b6174b;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--light-color);
 }
