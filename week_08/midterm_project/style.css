@@ -12,6 +12,7 @@
 /* General Styles for All Pages */
 * {
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 body {
@@ -132,10 +133,12 @@ footer p {
   width: 50%;
   align-self: center;
   text-align: center;
+
+  padding: 10px;
 }
 
 .staves-img img {
-  max-height: 100%;
+  max-height: 80%;
   width: auto;
   max-width: 100%;
 }
@@ -149,6 +152,7 @@ footer p {
 }
 
 .rhythm-img {
+  padding: 10px;
 }
 
 .rhythm-img img {
@@ -167,6 +171,8 @@ footer p {
 
 .pitch-img {
   grid-column: span 1;
+
+  padding: 10px;
 }
 
 .pitch-img img {
@@ -175,9 +181,11 @@ footer p {
 }
 
 .roman-numerals {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 10px; */
+  display: flex;
+  flex-direction: column;
 }
 
 .major-keys {
@@ -189,6 +197,7 @@ footer p {
 }
 
 .major-keys-img {
+  padding: 10px;
 }
 
 .major-keys-img img {
@@ -205,6 +214,7 @@ footer p {
 }
 
 .minor-keys-img {
+  padding: 10px;
 }
 
 .minor-keys-img img {
@@ -213,9 +223,11 @@ footer p {
 }
 
 .voice-leading {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 10px; */
+  display: flex;
+  flex-direction: column;
 }
 
 .vocal-ranges {
@@ -229,6 +241,8 @@ footer p {
 
 .vocal-ranges-img {
   width: 50%;
+
+  padding: 10px;
 }
 
 .vocal-ranges-img img {
@@ -246,6 +260,7 @@ footer p {
 }
 
 .spacing-rules-img {
+  padding: 10px;
 }
 
 .spacing-rules-img img {
@@ -264,6 +279,8 @@ footer p {
 
 .resolutions-img {
   width: 50%;
+
+  padding: 10px;
 }
 
 .resolutions-img img {
@@ -283,6 +300,8 @@ footer p {
 
 .intervals-img {
   width: 50%;
+
+  padding: 10px;
 }
 
 .intervals-img img {
@@ -297,4 +316,44 @@ footer p {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
+}
+
+/* Horizontal phone break */
+@media (min-width: 576px) {
+  /* HOME PAGE STYLES */
+
+  /* BASIC CONCEPTS STYLES */
+  .basic-concepts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .notation {
+    grid-column: span 2;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .notation-heading {
+    grid-column: 1 / span 2;
+  }
+
+  .staves {
+    grid-column: 1 / span 1;
+  }
+
+  .rhythm {
+    grid-column: 2 / span 1;
+  }
+
+  .pitch {
+    grid-column: 1 / span 2;
+  }
+
+  .roman-numerals {
+    grid-column: 1 / span 1;
+  }
+
+  .voice-leading {
+    grid-column: 2 / span 1;
+  }
 }
