@@ -22,7 +22,9 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+ul,
+li {
   color: var(--dark-color);
 }
 
@@ -124,14 +126,24 @@ footer p {
   grid-template-columns: 1fr;
   gap: 10px;
 
-  background-color: var(--accent-light-color);
-  border: 4px solid var(--accent-dark-color);
+  background-color: var(--accent-dark-color);
   border-radius: 10px;
+
+  padding: 20px 10px;
+}
+
+.notation-heading {
+  color: var(--white-color);
 }
 
 .staves {
   display: flex;
   flex-direction: row;
+
+  background-color: var(--accent-light-color);
+  border-radius: 10px;
+
+  padding: 10px 5px;
 }
 
 .staves-text {
@@ -155,6 +167,11 @@ footer p {
 .rhythm {
   display: flex;
   flex-direction: column;
+
+  background-color: var(--accent-light-color);
+  border-radius: 10px;
+
+  padding: 10px 5px;
 }
 
 .rhythm-text {
@@ -172,6 +189,11 @@ footer p {
 .pitch {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  background-color: var(--accent-light-color);
+  border-radius: 10px;
+
+  padding: 10px 5px;
 }
 
 .pitch-text {
@@ -192,15 +214,27 @@ footer p {
 .roman-numerals {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 
-  background-color: var(--accent-light-color);
-  border: 4px solid var(--accent-dark-color);
+  background-color: var(--accent-dark-color);
   border-radius: 10px;
+
+  padding: 20px 10px;
+}
+
+.roman-numerals-text h2,
+.roman-numerals-text p {
+  color: var(--white-color);
 }
 
 .major-keys {
   display: flex;
   flex-direction: column;
+
+  background-color: var(--accent-light-color);
+  border-radius: 10px;
+
+  padding: 10px 5px;
 }
 
 .major-keys-text {
@@ -218,6 +252,11 @@ footer p {
 .minor-keys {
   display: flex;
   flex-direction: column;
+
+  background-color: var(--accent-light-color);
+  border-radius: 10px;
+
+  padding: 10px 5px;
 }
 
 .minor-keys-text {
@@ -235,15 +274,27 @@ footer p {
 .voice-leading {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 
-  background-color: var(--accent-light-color);
-  border: 4px solid var(--accent-dark-color);
+  background-color: var(--accent-dark-color);
   border-radius: 10px;
+
+  padding: 20px 10px;
+}
+
+.voice-leading-text p,
+.voice-leading-text h2 {
+  color: var(--white-color);
 }
 
 .vocal-ranges {
   display: flex;
   flex-direction: row;
+
+  background-color: var(--accent-light-color);
+  border-radius: 10px;
+
+  padding: 10px 5px;
 }
 
 .vocal-ranges-text {
@@ -265,6 +316,11 @@ footer p {
 .spacing-rules {
   display: flex;
   flex-direction: column;
+
+  background-color: var(--accent-light-color);
+  border-radius: 10px;
+
+  padding: 10px 5px;
 }
 
 .spacing-rules-text {
@@ -282,6 +338,11 @@ footer p {
 .resolutions {
   display: flex;
   flex-direction: row;
+
+  background-color: var(--accent-light-color);
+  border-radius: 10px;
+
+  padding: 10px 5px;
 }
 
 .resolutions-text {
@@ -303,6 +364,11 @@ footer p {
 .intervals {
   display: flex;
   flex-direction: row;
+
+  background-color: var(--accent-light-color);
+  border-radius: 10px;
+
+  padding: 10px 5px;
 }
 
 .intervals-text {
