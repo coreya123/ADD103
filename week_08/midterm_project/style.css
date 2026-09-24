@@ -16,7 +16,6 @@
 
 body {
   background-color: var(--background-color);
-  width: 100%;
 }
 
 h1,
@@ -112,35 +111,27 @@ footer p {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
-
-  border: 4px solid red;
 }
 
 .notation {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-
-  border: 4px solid orange;
 }
 
 .staves {
   display: flex;
   flex-direction: row;
-
-  border: 4px solid green;
 }
 
 .staves-text {
   width: 50%;
-  border: 4px solid blue;
 }
 
 .staves-img {
   width: 50%;
   align-self: center;
   text-align: center;
-  border: 4px solid blue;
 }
 
 .staves-img img {
@@ -152,16 +143,12 @@ footer p {
 .rhythm {
   display: flex;
   flex-direction: column;
-
-  border: 4px solid green;
 }
 
 .rhythm-text {
-  border: 4px solid blue;
 }
 
 .rhythm-img {
-  border: 4px solid blue;
 }
 
 .rhythm-img img {
@@ -172,18 +159,14 @@ footer p {
 .pitch {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  border: 4px solid green;
 }
 
 .pitch-text {
   grid-column: span 2;
-  border: 4px solid blue;
 }
 
 .pitch-img {
   grid-column: span 1;
-  border: 4px solid blue;
 }
 
 .pitch-img img {
@@ -195,23 +178,17 @@ footer p {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-
-  border: 4px solid orange;
 }
 
 .major-keys {
   display: flex;
   flex-direction: column;
-
-  border: 4px solid green;
 }
 
 .major-keys-text {
-  border: 4px solid blue;
 }
 
 .major-keys-img {
-  border: 4px solid blue;
 }
 
 .major-keys-img img {
@@ -222,19 +199,94 @@ footer p {
 .minor-keys {
   display: flex;
   flex-direction: column;
-
-  border: 4px solid green;
 }
 
 .minor-keys-text {
-  border: 4px solid blue;
 }
 
 .minor-keys-img {
-  border: 4px solid blue;
 }
 
 .minor-keys-img img {
   width: 100%;
   height: auto;
+}
+
+.voice-leading {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.vocal-ranges {
+  display: flex;
+  flex-direction: row;
+}
+
+.vocal-ranges-text {
+  width: 50%;
+}
+
+.vocal-ranges-img {
+  width: 50%;
+}
+
+.vocal-ranges-img img {
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
+.spacing-rules {
+  display: flex;
+  flex-direction: column;
+}
+
+.spacing-rules-text {
+}
+
+.spacing-rules-img {
+}
+
+.spacing-rules-img img {
+  width: 100%;
+  height: auto;
+}
+
+.resolutions {
+  display: flex;
+  flex-direction: row;
+}
+
+.resolutions-text {
+  width: 50%;
+}
+
+.resolutions-img {
+  width: 50%;
+}
+
+.resolutions-img img {
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
+.intervals {
+  display: flex;
+  flex-direction: row;
+}
+
+.intervals-text {
+  width: 50%;
+}
+
+.intervals-img {
+  width: 50%;
+}
+
+.intervals-img img {
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
 }
