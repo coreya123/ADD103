@@ -290,3 +290,11 @@ footer p {
   width: auto;
   max-width: 100%;
 }
+
+/* RESOURCES STYLES */
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
