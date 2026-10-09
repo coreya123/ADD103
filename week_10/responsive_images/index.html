@@ -9,9 +9,92 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title></title>
+    <title>Sea Creatures</title>
   </head>
   <body>
+    <header class="container-fluid">
+      <h1>Sea Creatures</h1>
+      <picture>
+        <source
+          srcset="images/sea-lions/sea-lion-mobile.webp"
+          media="(max-width: 767px)"
+        />
+        <source srcset="images/sea-lions/sea-lion-desktop.webp" />
+        <img
+          class="img-fluid"
+          src="images/sea-lions/sea-lion-desktop.webp"
+          alt="Sea lion and pup"
+        />
+      </picture>
+    </header>
+
+    <main class="container py-3">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img
+            class="img-fluid img-thumbnail ratio-16x9"
+            src="images/dolphin/dolphin-800.webp"
+            srcset="
+              images/dolphin/dolphin-480.webp   480w,
+              images/dolphin/dolphin-800.webp   800w,
+              images/dolphin/dolphin-1200.webp 1200w
+            "
+            sizes="(max-width: 600px) 480px,
+                                (max-width: 900px) 800px,
+                                1200px"
+            alt="dolphin"
+          />
+        </div>
+
+        <div class="col-12 col-md-6">
+          <img
+            class="img-fluid img-thumbnail ratio-16x9"
+            src="images/jellyfish/jellyfish-800.webp"
+            srcset="
+              images/jellyfish/jellyfish-480.webp   480w,
+              images/jellyfish/jellyfish-800.webp   800w,
+              images/jellyfish/jellyfish-1200.webp 1200w
+            "
+            sizes="(max-width: 600px) 480px,
+                                  (max-width: 900px) 800px,
+                                  1200px"
+            alt="jellyfish"
+          />
+        </div>
+
+        <div class="col-12 col-md-6">
+          <img
+            class="img-fluid img-thumbnail ratio-16x9"
+            src="images/starfish/starfish-800.webp"
+            srcset="
+              images/starfish/starfish-480.webp   480w,
+              images/starfish/starfish-800.webp   800w,
+              images/starfish/starfish-1200.webp 1200w
+            "
+            sizes="(max-width: 600px) 480px,
+                                    (max-width: 900px) 800px,
+                                    1200px"
+            alt="starfish"
+          />
+        </div>
+
+        <div class="col-12 col-md-6">
+          <img
+            class="img-fluid img-thumbnail ratio-16x9"
+            src="images/turtle/turtle-800.webp"
+            srcset="
+              images/turtle/turtle-480.webp   480w,
+              images/turtle/turtle-800.webp   800w,
+              images/turtle/turtle-1200.webp 1200w
+            "
+            sizes="(max-width: 600px) 480px,
+                                      (max-width: 900px) 800px,
+                                      1200px"
+            alt="starfish"
+          />
+        </div>
+      </div>
+    </main>
     <!-- bootstrap js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
