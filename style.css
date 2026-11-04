@@ -1,24 +1,39 @@
 body {
-    background-color:rgb(241, 232, 134);
+  background-color: rgb(241, 232, 134);
 }
 
-h1, h2, h3 {
-    color:darkslateblue;
+h1,
+h2,
+h3 {
+  color: darkslateblue;
 }
 
-p, li, a {
-    color:darkslategray;
+p,
+li,
+a {
+  color: darkslategray;
 }
 
 a:hover {
-    color: rgb(90, 121, 121);
+  color: rgb(90, 121, 121);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+details {
+  padding-bottom: 10px;
 }
 
 summary {
-    color: darkslateblue;
-    font-size: larger;
+  color: darkslateblue;
+  font-size: larger;
 }
 
 #profile-pic {
-    max-width: 100px;
+  max-width: 100px;
 }
