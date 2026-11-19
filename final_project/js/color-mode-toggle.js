@@ -1,16 +1,19 @@
 const btn = document.getElementById("mode-toggle");
 const htmlTag = document.getElementById("html");
 
-let currentColor = 'light'
 
 console.log("button clicked!");
 btn.addEventListener("click", () => {
-    if(currentColor === 'light') {
-        currentColor = 'dark'
-        btn.textContent = 'light mode'
-    } else {
-        currentColor = 'light'
+    if(sessionStorage.getItem('currentColor') === 'dark') {
         btn.textContent = 'dark mode'
+        sessionStorage.setItem("currentColor", 'light')
+        htmlTag.setAttribute('data-bs-theme', 'light')
+        console.log("changed theme to light mode")
+    } else {
+        btn.textContent = 'light mode'
+        sessionStorage.setItem("currentColor", 'dark')
+        htmlTag.setAttribute('data-bs-theme', 'dark')
+        console.log("changed theme to dark mode")
     }
-    htmlTag.setAttribute('data-bs-theme', currentColor)
+  
 });
