@@ -236,6 +236,52 @@
   --bs-gradient: none;
 }
 
+.marked {
+  padding-inline-start: 1.75rem;
+}
+
+.marked li {
+  padding-inline-start: 0.4rem;
+  margin-block: 0.5rem;
+}
+
+.marked li::marker {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.centered-list {
+  list-style: none;
+  counter-reset: list-counter calc(attr(start type(<integer>), 1) - 1);
+  padding-left: 0;
+}
+
+.centered-list li {
+  counter-increment: list-counter;
+  display: flex;
+  align-items: center; /* Vertically centers the number and the text */
+  gap: 12px; /* Adds space between the number and the text */
+  margin-bottom: 12px;
+  font-size: 1.3em;
+  color: var(--foreground-color);
+}
+
+.centered-list a {
+  color: #ffcd61;
+}
+.centered-list a:hover {
+  color: #f2c35c;
+}
+
+.centered-list li::before {
+  content: counter(list-counter) "";
+  font-weight: bold;
+  font-size: 2em;
+  flex-shrink: 0; /* Prevents the number from shrinking on narrow screens */
+  color: var(--accent-color);
+}
+
 a.disabled {
   /* Make the disabled links grayish*/
   color: gray;
@@ -243,4 +289,8 @@ a.disabled {
   pointer-events: none;
 
   border-color: gray;
+}
+
+.larger-font {
+  font-size: 1.3rem;
 }
