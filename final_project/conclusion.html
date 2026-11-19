@@ -22,15 +22,18 @@
     <!-- custom css -->
     <link rel="stylesheet" href="css/index.css" />
   </head>
-  <body id="body">
+  <body id="body" class="bg-color-bg">
     <header>
-      <nav class="navbar navbar-expand-xl bg-primary navbar-dark">
+      <nav
+        id="nav-bar"
+        class="navbar navbar-expand-xl bg-color-bg navbar-light"
+      >
         <div class="container-xl justify-content-between">
           <div class="d-flex p-2 gap-2">
             <a class="navbar-brand" href="index.html"
               >MuseScore Studio Tutorial</a
             >
-            <button class="btn btn-outline-light btn-sm" id="mode-toggle">
+            <button class="btn btn-navbar btn-sm" id="mode-toggle">
               dark mode
             </button>
           </div>
@@ -65,7 +68,7 @@
                 <a class="nav-link" href="save.html">Save</a>
               </li>
               <li>
-                <a class="nav-link active" href="conclusion.html">Conclusion</a>
+                <a class="nav-link" href="conclusion.html">Conclusion</a>
               </li>
             </ul>
           </div>
@@ -73,7 +76,7 @@
       </nav>
     </header>
 
-    <footer class="bg-warning">
+    <footer class="bg-color-primary color-accent">
       <div class="container-xl py-5 text-center">
         <div class="row gx-2 justify-content-between align-content-center">
           <div class="col-3 col-lg-2">
@@ -105,7 +108,7 @@
               aria-valuemax="7"
             >
               <div
-                class="progress-bar progress-bar-striped bg-info"
+                class="progress-bar progress-bar-striped bg-color-accent"
                 style="width: 100%"
               ></div>
             </div>
