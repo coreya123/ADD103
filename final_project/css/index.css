@@ -17,6 +17,7 @@
 
   --primary-color: #1e2a85;
   --primary-color-rgb: 30, 42, 133;
+  --primary-hover: #29358b;
 
   --secondary-color: #c9e0f3;
   --secondary-color-rgb: 201, 224, 243;
@@ -40,6 +41,7 @@
 
   --primary-color: #ffcd61;
   --primary-color-rgb: 255, 205, 97;
+  --primary-hover: #f2c35c;
 
   --secondary-color: #0c2336;
   --secondary-color-rgb: 12, 35, 54;
@@ -135,10 +137,10 @@
 }
 
 .centered-list a {
-  color: #ffcd61;
+  color: var(--primary-color);
 }
 .centered-list a:hover {
-  color: #f2c35c;
+  color: var(--primary-hover);
 }
 
 .centered-list li::before {
